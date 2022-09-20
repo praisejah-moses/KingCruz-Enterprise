@@ -1,0 +1,40 @@
+<%- include ("template"); -%>
+<style>
+    body{
+        background-color: #E8F9FD;
+    }
+    .brand  {
+        color: black;
+    }
+    .navbar{
+        position: relative;
+    }
+    .rateContainer{
+        padding: 10px 30px 10px;
+    }
+    .rateContainer h1{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+    }
+    form{
+        display: inline;
+        margin: 30px;
+    }
+</style>
+<section class="rateContainer" >
+<h1>
+    New Rate
+</h1>
+
+<div>
+
+    <form method="post">
+        <input type="text"  placeholder="card name" name="cardName" >
+        <input type="text"  placeholder="rate in naira" name="rateInaira">
+        <button type="submit"> Update </button>
+    </form>
+
+</div>
+</section>
+
+

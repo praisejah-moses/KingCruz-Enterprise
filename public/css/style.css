@@ -1,0 +1,242 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    padding: 10px 10px;
+    z-index: 99;
+    justify-content: space-around;
+}
+.brand{
+    padding: 5px 5px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+}
+.brand h1{
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin: 0px 10px ;
+}
+/* TOP SECTION */
+.top{
+    background-image: url(/assets/images/card-img.jpg);
+    width: 100%; height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.content{
+    height: 100%;
+    position: relative;
+    padding: 200px 30px 0px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+}
+.contentText h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+.contentText p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contentText img{
+    display: none;
+}
+.contentImg{
+    display: flex;
+    text-align: center;
+}
+.contentImg img{
+    margin: auto;
+    width: 220; height: 300px;
+    display: block;
+}
+
+
+/* MIDLLE SECTION */
+.mid{
+    height: auto;
+    background-color: #E8F9FD;
+    padding: 50px 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.mid h1{
+    margin: 10px;
+}
+.component{
+    box-shadow: -10px 15px 50px -25px grey;
+    border: #E8F9FD 2px solid;
+    border-radius: 20px;
+   
+    display: inline-block;
+    text-align: center;
+    width: 35%;
+    margin: 10px 10px;
+    align-items: center;
+    padding: 5px;
+}
+.component h4{
+    font-size: 10px;
+    display: block;
+}
+.component h6{
+    padding: 5px;
+}
+.component h6::first-line{
+    font-size: 20px;
+}
+.component h6 p{
+    font-size: 12px;
+}
+
+
+
+
+/* LAST SECTION */
+.last{
+    color: #fff;
+    padding: 10px 10px;
+    background: #354259;
+    height: auto;
+}
+.last h1{
+    margin-left: 15px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+.icon{
+    width: 20px; height: 20px;
+}
+.linkContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.linkContainer a {
+    display: flex;
+    align-items: center;
+}
+.linkContainer a img{
+    margin-right: 10px;
+}
+.last a{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: ghostwhite;
+    font-size: 10px;
+    text-decoration: none;
+}
+.last a:hover{
+    color: wheat;
+}
+footer{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+    font-size: 8px;
+    text-align: center;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px){
+    .navbar{ 
+        padding: 0px 10px;
+    }
+    .navbar-container{
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .content{
+        padding: 100px 10px 0px;
+        display: flex;
+    }
+    .contentText h1{
+        text-align: left;
+        font-size: 70px;
+    }
+    .contentText p{
+        margin-top: 50px;
+        font-size: 20px;
+        text-align: left;
+    }
+    .contentText img{
+        display: block;
+        width: 100px; height: 100px;
+    }
+    .contentImg{
+        padding-top: 150px;
+    }
+    .contentImg img{
+        max-width: 100%; height: auto;
+    }
+    .top{
+        height: auto;
+    }
+    .last h1{
+        margin-left: 90px;
+    }
+    .component{
+        display: inline-flex;
+        width: 35%;
+        justify-content: flex-start;
+        margin: 20px 50px;
+    }
+    .component h6{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 815px){
+    .contentImg{
+        padding-top: 40px;
+    }
+}
+@media screen and (min-width: 896px){
+    .contentImg{
+        padding-top: 0px;
+    }
+}
+
+@media screen and (max-width: 306px){
+    .brand{
+        width: 100%;
+    }
+    .navbar .brand img{
+        margin: 0px 10px;
+    }
+}
+
+
+
+
+
+/* NAVBAR TOGGLE */
+.light{
+    background-color: white;
+}
+.lightHeader{
+    color: #000000;
+}

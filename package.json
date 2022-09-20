@@ -1,0 +1,20 @@
+{
+  "name": "kingcruz-enterprise---web",
+  "version": "1.0.0",
+  "description": "KingCruz Enterprise Website",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "PraiseJah Moses",
+  "license": "ISC",
+  "engines": {
+    "node": "16.15.1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "node": "^18.9.0",
+    "nodemon": "^2.0.20"
+  }
+}
