@@ -31,12 +31,6 @@ app.post('/rates',function(req,res){
         else if(cardName==="Walmart"){
             WnairaRate = rate;} 
             
-              
-    
-    console.log(InairaRate)
-    console.log(GnairaRate)
-    console.log(RnairaRate)
-    console.log(WnairaRate)
 });
 
 app.get('/', function(req, res) {
@@ -47,4 +41,4 @@ app.get('/rates', function(req,res){
     res.render('rates')
 });
 
-app.listen(process.env.PORT,()=>console.log('Server Started'));
+app.listen(3000,()=>console.log('Server Started'));
